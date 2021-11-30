@@ -1,7 +1,50 @@
 body {
-  font-family: Helvetica;
+  color: white;
+  background-color: black;
 }
+
 .app {
   margin-top: 20px;
   margin-bottom: 20px;
+  display: flex;
+  .cities {
+    padding-left: 10px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border:2px solid red;
+
+    .card {
+      width: calc(50% - 10px);
+      margin-right: 10px;
+      margin-bottom: 10px;
+      border:2px solid green;
+  
+    }
+  }
+
+  .image{
+    width: 100%;
+    height: auto;
+  }
+  
+  .active-city {
+    width: 70%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    border:2px solid blue;
+
+    h3 {
+      margin-top: 0;
+    }
+  }
+}
+
+.list-group-item {
+  background-color: transparent;
+  cursor: pointer;
 }
